@@ -1,0 +1,27 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem              1.0
+PortGroup               github 1.0
+PortGroup               cmake 1.1
+
+github.setup            jarro2783 cxxopts 943cdcfbbaa205f9a1789d96c7a57accfabcd233
+version                 20200108
+categories              devel
+platforms               darwin
+maintainers             {@sampotter umiacs.umd.edu:sfp}
+license                 MIT
+
+description             Lightweight C++ command line option parser
+
+long_description        ${description}
+
+checksums               rmd160  e34cfb06036db32f6d78d223f63627251fd9d50c \
+                        sha256  c6740f526b08ad7c478ce3d871a72a21a12b0d1acb90c7080eefcd0226120ac8 \
+                        size    90603
+
+compiler.cxx_standard   2011
+
+installs_libs           no
+supported_archs         noarch
+
+configure.args-append   -DCXXOPTS_BUILD_EXAMPLES=OFF _DCXXOPTS_BUILD_TESTS=OFF

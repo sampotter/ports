@@ -1,0 +1,7 @@
+* My local Portfiles
+
+  This is my collection of local [[https://www.macports.org/][macports]] Portfiles.
+
+  To use them, all you need to do is clone this repository somewhere,
+  `cd` into it, and run `portindex` (assuming you have [[https://www.macports.org/][macports]]
+  installed). See [[https://guide.macports.org/#development.local-repositories][this link]] for more information.
